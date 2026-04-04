@@ -2,7 +2,7 @@
   awesome = prev.awesome.overrideAttrs (oa: {
     src = inputs.awesome-src;
 
-    buildInputs = oa.buildInputs ++ (with prev; [xorg.xcbutilerrors]);
+    buildInputs = oa.buildInputs ++ (with prev; [libxcb-errors]);
 
     patches = [];
 

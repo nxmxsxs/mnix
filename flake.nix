@@ -139,6 +139,7 @@
         source =
           config.lib.file.mkOutOfStoreSymlink
           "${config.xdg.configHome}/home-manager/${toString p}";
+        force = true;
       };
     };
   };
